@@ -1,0 +1,14 @@
+Goal: Process files from the Rosenthal collection in Hoffman GPU cluster from mpg2 files to mp4 files using ffmpeg on the Itkin GPU cluster.
+
+Architecture: mpg_convert.sh is in /home/disinfo_study_2310/vanessachan/whisper-scripts
+It processes files from /home/disinfo_study_2310/vanessachan/mpg-transfer, which is an NFS mounted directory to where the Rosenthal files are stored in Hoffman, and puts them into /home/disinfo_study_2310/vanessachan/rosenthal-landing, which is an NFS mounted 30TB directory on Hoffman which was created by the library for us. The processing is done on ffmpeg which is downloaded locally onto the Itkin GPU cluster, although the Itkin GPU cluster does not store any of these files.
+
+To run (in bash):
+# creates a screen through your terminal to run the scropt
+screen
+# runs the script
+./mpg_convert.sh
+# Click these buttons to remove the screen from your terminal so that it runs even when you exit
+Ctrl A + D
+# Check if it is running
+ps aux | grep ffmpeg
