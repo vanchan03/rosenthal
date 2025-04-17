@@ -65,7 +65,7 @@ for INPUT_FILE in "$INPUT_DIR"/*.mpg; do
         MAX_BITRATE=10000000
         TARGET_BITRATE=5000000
     fi
-    
+
     # Record start time
     START_TIME=$(date +%s)
     
