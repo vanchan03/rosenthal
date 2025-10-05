@@ -15,11 +15,11 @@ mpg_convert.sh - convert mpg files into mp4 at a target bitrate of 5 Mbps
 
 multilingual.sh - split multilingual files into 3 minute segments, transcribes each of them with whisper large and stitches it back together
 
-parakeet.py - runs parakeet's lightest model on the GPU cluster
+parakeet.py - runs parakeet's lightest model on the GPU cluster from https://huggingface.co/nvidia/parakeet-tdt_ctc-110m
 
 test_gpu_space.py - testing if the gpu has space for parakeet's model (specific to a bug I was getting on parakeet)
 
-whisper.cpp - whisper.cpp repo 
+whisper.cpp - whisper.cpp repo from https://github.com/ggml-org/whisper.cpp
 
 whisper_base.sh - the base file that runs whisper on an input folder, outputs it to another folder, and then activates 
 
